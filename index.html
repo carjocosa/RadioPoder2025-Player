@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>RadioPoder</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  body {
+    background-image: url("img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lunaradio {
+    width: 100%;
+    height: 350px; /* Ajusta la altura según sea necesario */
+    margin-top: 350px; /* Ajusta la distancia desde arriba según sea necesario */
+  }
+</style>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/lunaradio.js"></script>
+<script src="js/lunaradio.min.js"></script>
+</head>
+
+<body>
+<div id="lunaradio"></div>
+
+<script>
+  $(document).ready(function(){
+    $("#lunaradio").lunaradio({
+      userinterface: "big",
+      backgroundcolor: "",
+      fontcolor: "#a2c614",
+      hightlightcolor: "#FDFEFE",
+      fontname: "Saira Condensed",
+      googlefont: "Saira+Condensed:wght@100",
+      fontratio: "0.3",
+      radioname: "Radio Poder 95.3 FM",
+      scroll: "true",
+      coverimage: "https://radiopoderfm.com/wp-content/uploads/2024/10/cropped-Favicon.png",
+      usevisualizer: "real",
+      coverstyle: "animated",
+      visualizertype: "4",
+      multicolorvisualizer: "true",
+      color1: "#a2c614",
+      color2: "#4d4d4d",
+      color3: "#262626",
+      color4: "#262626",
+      itunestoken: "1000lIPN",
+      metadatatechnic: "Studio+ MedIA",
+      ownmetadataurl: "",
+      streamurl: "https://streamingecuador.net:7044",
+      streamtype: "icecast2", 
+      icecastmountpoint: "/radiopoder",
+      radionomyid: "",
+      radionomyapikey: "",
+      radiozenoid: "",
+      radiojarid: "",
+      radiocoid: "",
+      shoutcastpath: "",
+      shoutcastid: "1",
+      streamsuffix: "",
+      metadatainterval: "20000",
+      volume: "85",
+      debug: "true",
+      usestreamcorsproxy: "false", 
+      corsproxy: "",
+      autoplay: "true",
+    });
+  });
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
+</body>
+</html>
